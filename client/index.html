@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F8FAFC" />
+    <meta name="description" content="DatAI - Local-First AI File Intelligence Workspace. Understands spreadsheets, documents, and data with verifiable evidence." />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <title>DatAI | Next-Level File Intelligence Engine</title>
+    <script>
+      // Enforce clean Light Mode throughout the entire workspace
+      (function() {
+        try {
+          localStorage.setItem('datai_theme', 'light');
+          document.documentElement.classList.add('light');
+          document.documentElement.classList.remove('dark');
+        } catch (_) {
+          document.documentElement.classList.add('light');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-page text-primary antialiased min-h-screen overflow-hidden font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

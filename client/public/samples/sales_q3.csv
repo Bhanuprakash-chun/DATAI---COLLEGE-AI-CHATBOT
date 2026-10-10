@@ -1,0 +1,15 @@
+region,category,product,revenue,units_sold,date
+North America,Hardware,Server Rack X1,450000,15,2024-07-15
+North America,Software,Enterprise Cloud License,320000,80,2024-07-20
+North America,Services,Consulting Hours,125000,250,2024-07-28
+Europe,Hardware,Edge Gateway V2,210000,42,2024-08-04
+Europe,Software,Security Suite Pro,290000,95,2024-08-11
+Europe,Services,Integration Support,95000,190,2024-08-19
+Asia Pacific,Hardware,IoT Sensor Array,380000,1200,2024-08-25
+Asia Pacific,Software,AI Vision Toolkit,510000,150,2024-09-02
+Asia Pacific,Services,Data Engineering Sprint,180000,120,2024-09-10
+Latin America,Hardware,Edge Gateway V2,140000,28,2024-09-14
+Latin America,Software,Enterprise Cloud License,195000,45,2024-09-21
+Latin America,Services,Managed Operations,85000,90,2024-09-28
+North America,Software,AI Vision Toolkit,620000,180,2024-09-29
+Europe,Hardware,Server Rack X1,490000,16,2024-09-30

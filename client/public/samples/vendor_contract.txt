@@ -1,0 +1,19 @@
+# MASTER SERVICES AND SOFTWARE LICENSE AGREEMENT
+
+## Section 1: Scope of Engagement
+This Agreement defines the terms under which Vendor provides enterprise analytics infrastructure to Client.
+
+## Section 2: Compensation and Payment Terms
+Client agrees to remit payment for all approved invoices within net thirty (30) days from the invoice date. Late payments shall accrue interest at a rate of 1.5% per month or the highest rate permitted by law.
+
+## Section 3: Termination Conditions
+Either party may terminate this Agreement without cause by providing at least sixty (60) days advance written notice to the other party.
+Either party may terminate this Agreement immediately upon written notice if the other party breaches any material term and fails to cure such breach within thirty (30) days of receipt of written notice detailing the breach.
+In the event of insolvency, bankruptcy filing, or assignment for the benefit of creditors, termination shall be immediate.
+
+## Section 4: Limitation of Liability and Risks
+Under no circumstances shall either party be liable to the other for indirect, incidental, consequential, special, or punitive damages, including lost profits or business interruption.
+Vendor's maximum aggregate liability arising out of or related to this Agreement shall be strictly capped at the total amount actually paid by Client to Vendor during the twelve (12) month period immediately preceding the incident giving rise to liability.
+
+## Section 5: Confidentiality and Data Privacy
+All client data transmitted, parsed, or processed shall remain the exclusive property of Client. Vendor warrants that client documents shall be processed within the designated sandbox and shall not be used for unauthorized third-party model training without express written consent.

@@ -1,0 +1,16 @@
+{
+  "name": "DatAI - AI File Intelligence Workspace",
+  "short_name": "DatAI",
+  "description": "Privacy-first, local-first workspace for analyzing spreadsheets and documents with verifiable evidence.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0D0F",
+  "theme_color": "#14171A",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

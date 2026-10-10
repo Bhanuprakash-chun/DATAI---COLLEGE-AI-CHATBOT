@@ -1,0 +1,56 @@
+# ==============================================================================
+# Render Blueprint Configuration (render.yaml)
+# Docs: https://render.com/docs/blueprint-spec
+# ==============================================================================
+services:
+  # --------------------------------------------------------------------------
+  # Service 1: Python FastAPI AI Gateway Web Service
+  # --------------------------------------------------------------------------
+  - type: web
+    name: datai-backend
+    runtime: python
+    plan: free
+    region: oregon
+    rootDir: server
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DEFAULT_MODEL
+        value: gemini-2.0-flash
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: GEMINI_API_KEY
+        value: ""
+
+  # --------------------------------------------------------------------------
+  # Service 2: React Vite Frontend (Static Site - 100% Free, Zero Cold Starts)
+  # --------------------------------------------------------------------------
+  - type: static
+    name: datai-frontend
+    plan: free
+    region: oregon
+    rootDir: client
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      # Single-Page Application (SPA) client-side rewrite rule
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      # Isolation headers required for DuckDB-WASM and Web Workers
+      - path: /*
+        name: Cross-Origin-Opener-Policy
+        value: same-origin
+      - path: /*
+        name: Cross-Origin-Embedder-Policy
+        value: credentialless
+    envVars:
+      - key: VITE_BACKEND_URL
+        fromService:
+          type: web
+          name: datai-backend
+          property: host
